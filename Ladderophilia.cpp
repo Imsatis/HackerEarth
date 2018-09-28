@@ -1,21 +1,51 @@
 //#Practice
 //printin ladder :
 
+
 #include<iostream>
- 
 using namespace std;
- 
-int main(void) {
-    
-    int n=0,i;
-    cin>>n;
-    
-    for (i=0;i<=n;i++) {
-        cout<<"*   *"<<endl<<"*   *"<<endl;
-    
-        if(i<n) cout<<"*****"<<endl; 
-        
-    }
-    return 0;
-    
-}
+  int main() {
+     int distance=0,n_lim=0,excp=0,walked=0;
+     int day=0,index=0,i,j;
+
+       cin>>distance>>n_lim>>excp;
+
+     int *ex_day = new int [excp],*ex_lim = new int [excp];
+
+     for(i=0;i<excp;i++) cin>>ex_day[i]>>ex_lim[i];
+
+     for(i=0;i<excp;i++) {
+        for(j=0;j<excp-1;j++) {
+            if(ex_day[j]>ex_day[j+1]) {
+                ex_day[j]=ex_day[j]+ex_day[j+1];
+                ex_day[j+1]=ex_day[j]-ex_day[j+1];
+                ex_day[j]=ex_day[j]-ex_day[j+1];
+                ex_lim[j]=ex_lim[j]+ex_lim[j+1];
+                ex_lim[j+1]=ex_lim[j]-ex_lim[j+1];
+                ex_lim[j]=ex_lim[j]-ex_lim[j+1];
+            }
+        }
+     }
+    // for (i=0;i<excp;i++) cout<<ex_day[i]<<" "<<ex_lim[i]<<endl;
+
+        while(walked<distance) {
+            day++;
+          if(day==ex_day[index]) {
+            walked+=ex_lim[index];
+	    index++;
+           }
+         else  walked+=n_lim;
+
+     }
+       delete ex_day;
+       delete ex_lim;
+       cout<<day;
+       return 0;
+   }
+
+
+
+
+//3.76649
+
+//412
