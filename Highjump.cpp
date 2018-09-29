@@ -13,7 +13,7 @@ using namespace std;
    const int my_lim=--high_lim;         
       for(i=0;i<obstacles;i++) cin>>position[i]>>height[i];
 
-      for(i=0;i<obstacles;i++) {
+/*      for(i=0;i<obstacles;i++) {
         for(int j=0;j<obstacles-1;j++) {
                 if(position[j]>position[j+1]) {
             position[j]=position[j]^position[j+1];
@@ -36,6 +36,14 @@ using namespace std;
                 index++;
               }
             }
-          cout<<"Yes";
+          cout<<"Yes"; */
+         i=0;
+        while(walked<=distance) {
+	   
+	   if(position[i]<=distance&&height[i]<=high_lim){
+	     i++;walked++
+	   }
+	   
+	}
 
  }
