@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1538219537 source:c:\users\satis\desktop\imsatis\hackerearth\current_issue\main.cpp
+1538586531 source:c:\users\satis\desktop\imsatis\hackerearth\current_issue\main.cpp
 	<iostream>
+	<math.h>
 

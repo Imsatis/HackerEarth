@@ -9,7 +9,7 @@
  using namespace std;
 
     int main(void) {
-     int N,Q,i,Num=0;
+  /*   int N,Q,i,Num=0;
      cin>>N,Q;
      int *Ary = new int[N];
      for(i=0;i<N;i++) cin>>Ary[i];
@@ -30,7 +30,13 @@
     } 
     (Num%2!=1) ? cout<<"EVEN" : cout<<"ODD";
 
-     delete Ary;
+     delete Ary;*/
+     int n=0,i,t=0;
+     for(i=0;i<10;i++) {
+      // t+=2^n;
+       cout<<2^n<<"  ";n++
+     }
+
      return 0;
     
     }
