@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include<math.h>
 
@@ -5,7 +6,7 @@
  using namespace std;
 
     int main(void) {
-   /**  int N,Q,Num=0;
+     int N,Q,Num=0;
      cin>>N>>Q;
      int *Ary = new int[N];
      for(int i=0;i<N;i++) cin>>Ary[i];
@@ -28,12 +29,5 @@
 
      delete Ary;
 
-     return 0;*/
-     char i=0;
-     int ch,c=0;
-     cin>>ch;
-     //for (i=0;i>ch;i++) { cout<<(int)i;c++; }
-     if(i>=ch)
-     cout<<(int)i;
-
+     return 0;
     }
